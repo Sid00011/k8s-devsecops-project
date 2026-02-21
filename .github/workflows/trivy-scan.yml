@@ -1,14 +1,13 @@
 name: DevSecOps Scan
-on: [push] # Se lance à chaque fois que tu valides du code
+on: [push]
 
 jobs:
   security-scan:
-    runs-on: [self-hosted, linux] # Force l'exécution sur ton Master
+    runs-on: self-hosted
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
 
       - name: Run Trivy FS Scan
         run: |
-          # On utilise le binaire Trivy que tu as déjà installé
           /usr/local/bin/trivy fs --severity HIGH,CRITICAL .
