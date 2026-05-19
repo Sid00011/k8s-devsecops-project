@@ -36,9 +36,6 @@ The PLAY RECAP below confirms a clean deployment with perfect state synchronizat
 
 ![Ansible Playbook Success](https://github.com/user-attachments/assets/85ad43eb-71dd-44fb-8204-b3ad3249fa7d)
 
-All nodes in Ready state confirmed via kubectl:
-
-![Kubernetes Nodes Status](https://github.com/user-attachments/assets/6198c244-3cee-4f5d-9a5d-9a15733f0da4)
 
 ---
 
